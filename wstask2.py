@@ -10,7 +10,7 @@ block = soup.find_all('div', class_ = 'mobiles-product-card card card__product c
 
 with open("Telia telefonai.csv", "w", encoding="UTF-8", newline='') as file:
     csv_writer = csv.writer(file)
-    csv_writer.writerow(['Modelis', ' Mėnesio kaina', ' Kaina:'])
+    csv_writer.writerow(['Phone Model', 'Monthly price', 'Price'])
 
     for each_block in block:
         try:
